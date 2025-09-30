@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Support • Field of Vision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Help and FAQs for the Field of Vision Companion App." />
+  <meta name="theme-color" content="#0b1f33" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    :root {
+      --fg:#0b1f33; --muted:#4a5568; --bg:#f7f9fc; --card:#fff; --accent:#1a73e8; --ok:#188038; --warn:#d97706; --danger:#d93025;
+    }
+    * { box-sizing:border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 40px 20px 72px; }
+    header { text-align:center; margin-bottom: 28px; }
+    h1 { font-size: 28px; letter-spacing:.2px; margin: 0 0 6px; }
+    .sub { color: var(--muted); font-size: 15px; }
+    nav.toc { background: var(--card); border-radius: 14px; padding: 16px; margin: 20px 0 28px; border:1px solid #e6eaef; }
+    nav.toc a { margin-right: 14px; font-size: 14px; }
+    section { background: var(--card); border-radius: 18px; padding: 20px; margin: 0 0 18px; border:1px solid #e6eaef; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    h3 { font-size: 18px; margin: 16px 0 8px; }
+    p, li { line-height: 1.55; }
+    .qa { margin: 10px 0 0; }
+    .qa dt { font-weight: 700; margin: 14px 0 6px; }
+    .qa dd { margin: 0 0 10px 0; color: var(--muted); }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#f1f5f9; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-size: 90%; }
+    .pill { display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; border:1px solid #e6eaef; background:#f8fafc; color:#334155; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    footer { color: var(--muted); text-align:center; font-size: 14px; margin-top: 28px; }
+    .callout { border-left:4px solid var(--accent); padding: 10px 12px; background:#f0f6ff; border-radius: 8px; }
+    .ok { color: var(--ok); } .warn { color: var(--warn); } .danger { color: var(--danger); }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b1220; --card:#0f172a; --fg:#e6edf5; --muted:#93a3b8; --accent:#6aa9ff; }
+      body { background: var(--bg); color: var(--fg); }
+      section, nav.toc { border-color:#1f2a44; }
+      .kbd { background:#0b1220; border-color:#1f2a44; color:#dbe7ff; }
+      .callout { background:#0e1a33; }
+    }
+  </style>
+
+  <!-- Structured data for FAQ (helps Google show rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What is the Field of Vision Companion App?",
+        "acceptedAnswer":{"@type":"Answer","text":"An accessibility-focused iOS app that pairs with the Field of Vision handheld device to provide real-time spatial audio cues for live sports."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do I need the hardware to use the app?",
+        "acceptedAnswer":{"@type":"Answer","text":"No. You can start the demo stream to hear spatial audio without the device. Haptic feedback requires the Field of Vision hardware."}
+      },
+      {
+        "@type":"Question",
+        "name":"Will audio continue when my phone is locked?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. While streaming, the app plays live spatial audio that continues with the screen locked. You can Pause/Resume/Stop at any time."}
+      },
+      {
+        "@type":"Question",
+        "name":"What data does the app collect?",
+        "acceptedAnswer":{"@type":"Answer","text":"None. The app collects no personal data, uses no analytics, and shares nothing with third parties. See the Privacy Policy (https://privacy.fov.ie) for details."}
+      },
+      {
+        "@type":"Question",
+        "name":"How do I contact support?",
+        "acceptedAnswer":{"@type":"Answer","text":"Email info@fov.ie and include your iPhone model, iOS version, and a brief description of the issue."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Field of Vision • Support</h1>
+      <div class="sub">Help, FAQs, and troubleshooting for the FOV Companion App</div>
+    </header>
+
+    <nav class="toc" aria-label="On this page">
+      <a href="#contact">Contact</a>
+      <a href="#quickstart">Quick Start</a>
+      <a href="#faq">FAQ</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+      <a href="#requirements">Requirements</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p class="callout">
+        Need help? Email <a href="mailto:info@fov.ie?subject=FOV%20Support%20Request">info@fov.ie</a>.  
+        Please include your iPhone model, iOS version, app version, and a short description (screenshots welcome).
+      </p>
+    </section>
+
+    <section id="quickstart" aria-labelledby="quickstart-h">
+      <h2 id="quickstart-h">Quick Start</h2>
+      <div class="grid">
+        <div>
+          <h3>1. Install</h3>
+          <p>Download the app from the App Store. Open it once to finish setup.</p>
+        </div>
+        <div>
+          <h3>2. Start a Demo</h3>
+          <p>Tap <span class="kbd">Start stream</span> to hear spatial audio (no hardware required). Audio continues with the screen locked.</p>
+        </div>
+        <div>
+          <h3>3. Pair Device (optional)</h3>
+          <p>Tap <span class="kbd">Search for nearby device</span> or use <span class="kbd">Tap to connect via NFC</span> to pair your Field of Vision device for haptics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-h">
+      <h2 id="faq-h">FAQ</h2>
+      <dl class="qa">
+        <dt>What is the Field of Vision Companion App?</dt>
+        <dd>It’s an accessibility-focused iOS app that pairs with the Field of Vision handheld device, providing real-time spatial audio cues that represent ball position during a live match.</dd>
+
+        <dt>Do I need the hardware to use the app?</dt>
+        <dd>No. You can use the demo stream to hear spatial audio without hardware. The tactile (haptic) experience requires the Field of Vision device.</dd>
+
+        <dt>Will audio continue when my phone is locked?</dt>
+        <dd>Yes. While streaming, the app plays live audio that continues with the screen locked. You can Pause/Resume/Stop at any time, and interruptions (e.g., calls, Siri) should recover automatically.</dd>
+
+        <dt>Does the app collect any personal data?</dt>
+        <dd>No. The app collects no personal data and uses no analytics or tracking. See our <a href="https://privacy.fov.ie" rel="noopener">Privacy Policy</a> for details.</dd>
+
+        <dt>Why does the app ask for Bluetooth or NFC permissions?</dt>
+        <dd>To connect to your Field of Vision device. Nearby device IDs and NFC tag data are processed locally and not uploaded.</dd>
+
+        <dt>Can I use the app with VoiceOver?</dt>
+        <dd>Yes. The app includes large, high-contrast controls and announces state changes (e.g., Connected, Streaming, Paused).</dd>
+
+        <dt>Who do I contact for help?</dt>
+        <dd>Email <a href="mailto:info@fov.ie?subject=FOV%20Support%20Request">info@fov.ie</a>. We’ll get back to you as soon as we can.</dd>
+      </dl>
+    </section>
+
+    <section id="troubleshooting" aria-labelledby="troubleshooting-h">
+      <h2 id="troubleshooting-h">Troubleshooting</h2>
+
+      <h3>App plays no audio</h3>
+      <ul>
+        <li>Ensure your device is not muted and volume is up.</li>
+        <li>In iOS Settings → Bluetooth, confirm Bluetooth is on.</li>
+        <li>In the app, tap <span class="kbd">Start stream</span> again to resume.</li>
+        <li>If you took a call or used Siri, audio should auto-resume—if not, tap <span class="kbd">Resume</span>.</li>
+      </ul>
+
+      <h3>Device not found over Bluetooth</h3>
+      <ul>
+        <li>Charge and power on your Field of Vision device; keep it nearby (within a few meters).</li>
+        <li>Tap <span class="kbd">Search for nearby device</span> and wait ~10 seconds.</li>
+        <li>Try NFC pairing by tapping <span class="kbd">Tap to connect via NFC</span> and holding the phone over the device’s tag.</li>
+        <li>If still not found, toggle iPhone Bluetooth off/on, then try again.</li>
+      </ul>
+
+      <h3>Streaming stops in background</h3>
+      <ul>
+        <li>Make sure you started the stream (tone should be audible before locking the phone).</li>
+        <li>Do not force-quit the app; re-open and press <span class="kbd">Resume</span> if needed.</li>
+        <li>Check your network signal (Wi-Fi or mobile data).</li>
+      </ul>
+
+      <h3>Still stuck?</h3>
+      <p>Email <a href="mailto:info@fov.ie?subject=FOV%20Support%20Request">info@fov.ie</a>. Include your iPhone model, iOS version, and what happened right before the issue.</p>
+    </section>
+
+    <section id="requirements" aria-labelledby="requirements-h">
+      <h2 id="requirements-h">Requirements</h2>
+      <ul>
+        <li>iPhone running iOS 15.1 or later.</li>
+        <li>Bluetooth enabled (for hardware pairing).</li>
+        <li>Internet connection for live streams (Wi-Fi or mobile data).</li>
+      </ul>
+      <p class="pill" aria-label="App version">App version: 1.0.x</p>
+    </section>
+
+    <section id="privacy" aria-labelledby="privacy-h">
+      <h2 id="privacy-h">Privacy</h2>
+      <p>We collect no personal data in the app. Read our full policy at <a href="https://privacy.fov.ie" rel="noopener">privacy.fov.ie</a>.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Field of Vision • <a href="mailto:info@fov.ie?subject=FOV%20Support%20Request">info@fov.ie</a></p>
+      <p>Last updated: 30 September 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
